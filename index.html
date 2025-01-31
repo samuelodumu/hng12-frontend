@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Odumu | Profile</title>
+    <!-- Page icon -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <!-- google font SUSE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <header>
+                <h4 data-testid="currentTimeUTC" id="current-time"></h4>
+                <img src="assets/me.jpg" data-testid="profilePicture"
+                    alt="a picture of me" class="profile-picture">
+                <h1 data-testid="fullName" class="full-name">Samuel Odumu</h1>
+                <div class="flex-details">
+                    <p data-testid="jobTitle" class="job-title">Senior frontend
+                        developer</p>
+                    <span class="bullet">•</span>
+                    <p data-testid="currentLocation" class="location">Abuja,
+                        Nigeria</p>
+                </div>
+                <div class="socials">
+                    <p><span class="semi-bold">Email:</span> <a
+                            href="mailto:themainsamuel@gmail.com"
+                            data-testid="emailAddress">themainsamuel@gmail.com</a>
+                    </p>
+                    <a href="https://github.com/samuelodumu/"
+                        data-testid="socialLinks" target="_blank"
+                        rel="noopener noreferrer"><i
+                            class="bi bi-github"></i></a>
+                    <a href="https://x.com/SamuelOdumu"
+                        data-testid="socialLinks" target="_blank"
+                        rel="noopener noreferrer"><i
+                            class="bi bi-twitter-x"></i></a>
+                    <a href="https://www.linkedin.com/in/samuelodumu/"
+                        data-testid="socialLinks" target="_blank"
+                        rel="noopener noreferrer"><i
+                            class="bi bi-linkedin"></i></a>
+                </div>
+            </header>
+            <main>
+                <section>
+                    <p data-testid="shortBio" class="bio">Hi! I'm Samuel the
+                        frontend guy, I really like making stunning visuals and
+                        hope to get better at it with each new project I build.
+                        When I'm not working I like watching a
+                        good movie, reading a book, or playing chess.
+                        Here's a great quote I love:
+                    </p>
+                    <blockquote class="blockquote">
+                        <p>Ever tried. Ever failed. No matter. Try again. Fail
+                            again. Fail better.</p>
+                        <footer class="blockquote-footer">Samuel Beckett
+                        </footer>
+                    </blockquote>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: 'SUSE', serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2b3f6d;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.3);
+  padding: 1.5rem 5rem;
+  width: 60%;
+}
+
+img.profile-picture {
+  width: 150px;
+  height: auto;
+  border-radius: 25px;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+.full-name {
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.flex-details {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  line-height: 110%;
+  margin: 0;
+  color: #5c6369;
+}
+
+.job-title, .location {
+  margin: 0;
+}
+
+.bullet {
+  margin: 0 0.5rem;
+}
+
+.socials p {
+  margin: 0.5rem 0;
+}
+
+.socials .semi-bold {
+  font-weight: 500;
+}
+
+.socials a {
+  color: #2b3f6d;
+  text-decoration: none;
+}
+
+[data-testid='socialLinks'] {
+  padding: 0 .5rem;
+  font-size: larger;
+}
+
+.bio {
+  margin: 0.5rem 0;
+}
+
+.blockquote {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.blockquote p {
+  margin: 0.5rem 0 0;
+}
+
+.blockquote-footer {
+  color: #6c757d;
+  margin-top: -0.4rem;
+  font-size: 0.95rem;
+}
+
+.blockquote-footer::before {
+  content: '— ';
+}
+
+/* media queries for card width on smaller screens */
+@media (max-width: 768px) {
+  .card {
+    padding: 1.5rem 2rem;
+    width: 80%;
+  }
+  img.profile-picture {
+    width: 100px;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 1.5rem 1rem;
+    width: 90%;
+  }
+}
