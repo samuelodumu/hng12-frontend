@@ -1,0 +1,29 @@
+:root {
+  --set-color: white;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+  display: flex;
+  text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#rectangle {
+    width: 40%;
+    height: 20vh;
+    border: 3px dashed black;
+}

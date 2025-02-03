@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color guessing game</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container"></div>
-    <script src="script.js"></script>
+    <div class="container">
+        <div data-testid="colorBox" id="rectangle"></div>
+        <p data-testid="gameInstructions">Above is a coloured rectangle, below
+            are six color buttons. The
+            object
+            of the game is to guess the color of the rectangle above by picking
+            the correct color button. Good luck 🤞🏼!</p>
+        <h3 data-testid="gameStatus" id="game-status"></h3>
+        <h3 data-testid="score" id="score-count"></h3>
+        <div class="color-options">
+            <button data-testid="colorOption" class="color-option"
+                id="color-option1"></button>
+            <button data-testid="colorOption" class="color-option"
+                id="color-option2"></button>
+            <button data-testid="colorOption" class="color-option"
+                id="color-option3"></button>
+            <button data-testid="colorOption" class="color-option"
+                id="color-option4"></button>
+            <button data-testid="colorOption" class="color-option"
+                id="color-option5"></button>
+            <button data-testid="colorOption" class="color-option"
+                id="color-option6"></button>
+        </div>
+        <button type="reset"></button>
+        <script src="script.js"></script>
 </body>
+
 </html>
