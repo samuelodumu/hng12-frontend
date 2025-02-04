@@ -52,3 +52,4 @@ document.getElementById(
 ).innerHTML = `Score count: ${updateScoreCount()}`;
 
 console.log('color from color and object: ' + colorAndObject[0]);
+
