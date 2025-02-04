@@ -1,6 +1,6 @@
 const getRGBColors = [
   'rgb(192, 192, 192)', // Silver
-  'rgb(255, 220, 185)', // Light Beige
+  'rgb(250, 199, 148)', // Peru (lighter)
   'rgb(204, 255, 255)', // Light Cyan
   'rgb(204, 204, 255)', // Light Lavender
   'rgb(255, 204, 255)', // Light Pink
