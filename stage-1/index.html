@@ -12,13 +12,12 @@
 <body>
     <div class="container">
         <div data-testid="colorBox" id="rectangle"></div>
-        <p data-testid="gameInstructions" class="game-instructions">Above is a coloured rectangle, below
-            are six color buttons. The
-            object
-            of the game is to guess the color of the rectangle above by picking
-            the correct color button. Good luck!🤞🏼</p>
-        <h3 data-testid="gameStatus" id="game-status"></h3>
-        <h3 data-testid="score" id="score-count"></h3>
+        <h3 data-testid="gameInstructions" class="game-instructions">Check out
+            the colored rectangle above! 🎨 Below, you'll see six color
+            buttons—your challenge is to guess which one matches the rectangle.
+            Pick the right color and test your skills! Good luck! 🤞🏼</h3>
+        <h3 data-testid="gameStatus" id="game-status">placeholder text</h3>
+        <h3 data-testid="score" id="score-count">placeholder text</h3>
         <div class="color-options">
             <p>What color is the rectangle?</p>
             <button data-testid="colorOption" class="color-option"
@@ -34,7 +33,8 @@
             <button data-testid="colorOption" class="color-option"
                 id="color-option6">F</button>
         </div>
-        <button type="reset" id="reset">New game</button>
+        <button type="reset" data-testid="newGameButton" id="reset">New
+            game</button>
         <script src="script.js"></script>
 </body>
 

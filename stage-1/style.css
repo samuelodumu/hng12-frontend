@@ -38,10 +38,20 @@ body {
   border: 3px solid black;
 }
 
-p.game-instructions {
+p {
+  color: #232323;
   margin-bottom: 0;
   font-size: larger;
   padding: 0 2.5rem;
+}
+
+h3.game-instructions {
+  color: #232323;
+  font-weight: semi-bold;
+}
+
+h3 {
+  color: bisque;
 }
 
 color-options {
@@ -50,7 +60,7 @@ color-options {
 
 button {
   cursor: pointer;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1rem;
   border-radius: 5px;
   border: none;
 }
@@ -66,11 +76,18 @@ button.color-option:hover {
 }
 
 button#reset {
-  background-color: #c1242e;
+  background-color: #fc5f71;
   color: aliceblue;
   margin: 1rem;
   font-size: larger;
-  box-shadow: 5px 5px 2px #999;
+  box-shadow: 5px 5px 2px #aaaaaa;
+  transition: all 0.3s;
+}
+
+button#reset:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 2px #b4b4b4;
+  background-color: #e35061;
 }
 
 @media (max-width: 768px) {
