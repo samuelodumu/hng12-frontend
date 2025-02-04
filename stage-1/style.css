@@ -1,5 +1,13 @@
 :root {
-  --set-color: white;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: 'Courier New', Courier, monospace;
+  --color-option1: white;
+  --color-option2: white;
+  --color-option3: white;
+  --color-option4: white;
+  --color-option5: white;
+  --color-option6: white;
 }
 
 *,
@@ -11,19 +19,71 @@
 body {
   background-color: bisque;
   display: flex;
+  justify-content: center;
   text-align: center;
+  margin: 2rem 0;
+  height: 100vh;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center ;
 }
 
 #rectangle {
-    width: 40%;
-    height: 20vh;
-    border: 3px dashed black;
+  width: 40%;
+  height: 20vh;
+  border: 3px solid black;
+}
+
+p.game-instructions {
+  margin-bottom: 0;
+  font-size: larger;
+  padding: 0 2.5rem;
+}
+
+color-options {
+  margin-top: 0;
+}
+
+button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+button.color-option {
+  padding: 1rem 1.5rem;
+  margin: 0.5rem;
+  transition: transform 0.3s;
+}
+
+button.color-option:hover {
+  transform: scale(1.2);
+}
+
+button#reset {
+  background-color: #c1242e;
+  color: aliceblue;
+  margin: 1rem;
+  font-size: larger;
+}
+
+@media (max-width: 768px) {
+  #rectangle {
+    width: 70%;
+  }
+}
+@media (max-width: 480px) {
+  #rectangle {
+    width: 80%;
+  }
+  p.game-instructions {
+    margin-bottom: 0;
+    font-size: medium;
+    padding: 0.5rem;
+  }
 }

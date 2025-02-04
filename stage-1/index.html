@@ -12,28 +12,29 @@
 <body>
     <div class="container">
         <div data-testid="colorBox" id="rectangle"></div>
-        <p data-testid="gameInstructions">Above is a coloured rectangle, below
+        <p data-testid="gameInstructions" class="game-instructions">Above is a coloured rectangle, below
             are six color buttons. The
             object
             of the game is to guess the color of the rectangle above by picking
-            the correct color button. Good luck 🤞🏼!</p>
+            the correct color button. Good luck!🤞🏼</p>
         <h3 data-testid="gameStatus" id="game-status"></h3>
         <h3 data-testid="score" id="score-count"></h3>
         <div class="color-options">
+            <p>What color is the rectangle?</p>
             <button data-testid="colorOption" class="color-option"
-                id="color-option1"></button>
+                id="color-option1">A</button>
             <button data-testid="colorOption" class="color-option"
-                id="color-option2"></button>
+                id="color-option2">B</button>
             <button data-testid="colorOption" class="color-option"
-                id="color-option3"></button>
+                id="color-option3">C</button>
             <button data-testid="colorOption" class="color-option"
-                id="color-option4"></button>
+                id="color-option4">D</button>
             <button data-testid="colorOption" class="color-option"
-                id="color-option5"></button>
+                id="color-option5">E</button>
             <button data-testid="colorOption" class="color-option"
-                id="color-option6"></button>
+                id="color-option6">F</button>
         </div>
-        <button type="reset"></button>
+        <button type="reset" id="reset">New game</button>
         <script src="script.js"></script>
 </body>
 
