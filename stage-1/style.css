@@ -23,7 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center ;
+  justify-content: center;
 }
 
 #rectangle {
@@ -83,6 +83,50 @@ button#reset:hover {
   box-shadow: 7px 7px 2px #b4b4b4;
   background-color: #e35061;
 }
+
+/* Animations */
+@keyframes correctGuess {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.correct {
+  animation: correctGuess 0.5s ease-in-out;
+}
+
+@keyframes wrongGuess {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.wrong {
+  animation: wrongGuess 0.3s ease-in-out;
+}
+
+/* Media Queries */
 
 @media (max-width: 768px) {
   #rectangle {

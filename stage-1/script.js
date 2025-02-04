@@ -88,17 +88,19 @@ function getGameStatus(event) {
   const buttonColor = event.target.style.backgroundColor;
   const status =
     buttonColor === setColor ? 'Correct 🎉' : 'Wrong color, start a new game';
-  const gameStatus = document.getElementById('game-status')
+  const gameStatus = document.getElementById('game-status');
   gameStatus.innerHTML = status;
   gameStatus.style.color = buttonColor === setColor ? 'green' : '#fc5f71';
 
   if (buttonColor === setColor) {
     updateScoreCount();
-    const scoreCount = document.getElementById('score-count')
+    celebrate();
+    const scoreCount = document.getElementById('score-count');
     scoreCount.innerHTML = `Score count: ${score}`;
     scoreCount.style.color = 'green';
     updateGame();
   } else {
+    showWrongGuess();
     score = 0;
     document.getElementById('score-count').innerHTML = `Score count: ${score}`;
   }
@@ -123,4 +125,22 @@ function shuffleArray(array) {
     [array[i], array[j]] = [array[j], array[i]]; // Swap elements
   }
   return array;
+}
+
+function celebrate() {
+  const rectangle = document.getElementById('rectangle');
+  rectangle.classList.add('correct');
+
+  setTimeout(() => {
+    rectangle.classList.remove('correct');
+  }, 500);
+}
+
+function showWrongGuess() {
+  const rectangle = document.getElementById('rectangle');
+  rectangle.classList.add('wrong');
+
+  setTimeout(() => {
+    rectangle.classList.remove('wrong');
+  }, 300);
 }
