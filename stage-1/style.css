@@ -123,8 +123,24 @@ button#reset:hover {
 }
 
 .wrong {
-  animation: wrongGuess 0.3s ease-in-out;
+  animation: wrongGuess 0.5s ease-in-out;
 }
+
+/* @keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade {
+  animation: fadeOut 0.5s ease-in-out;
+} */
 
 /* Media Queries */
 

@@ -115,6 +115,7 @@ function updateScoreCount() {
 function newGame() {
   document.getElementById('game-status').innerHTML = '';
   document.getElementById('score-count').innerHTML = '';
+  score = 0;
   updateGame();
 }
 document.getElementById('reset').addEventListener('click', newGame);
@@ -128,6 +129,8 @@ function shuffleArray(array) {
 }
 
 function celebrate() {
+  const correctSound = new Audio('assets/correct.wav');
+  correctSound.play();
   const rectangle = document.getElementById('rectangle');
   rectangle.classList.add('correct');
 
@@ -137,10 +140,12 @@ function celebrate() {
 }
 
 function showWrongGuess() {
+  const wrongSound = new Audio('assets/wrong.mp3');
+  wrongSound.play();
   const rectangle = document.getElementById('rectangle');
   rectangle.classList.add('wrong');
 
   setTimeout(() => {
     rectangle.classList.remove('wrong');
-  }, 300);
+  }, 500);
 }
