@@ -38,14 +38,14 @@ const getRGBColors = [
   // 'rgb(34, 139, 34)' // Forest Green
 ];
 
-let lastRandomColor = null;
+let lastChosenColor = null;
 function getRandomColor() {
-  let randomColor;
+  let chosenColor;
   do {
-    randomColor = getRGBColors[Math.floor(Math.random() * getRGBColors.length)];
-  } while (randomColor === lastRandomColor);
-  lastRandomColor = randomColor;
-  return randomColor;
+    chosenColor = getRGBColors[Math.floor(Math.random() * getRGBColors.length)];
+  } while (chosenColor === lastChosenColor);
+  lastChosenColor = chosenColor;
+  return chosenColor;
 }
 
 let setColor = getRandomColor();
