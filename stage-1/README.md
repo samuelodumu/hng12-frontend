@@ -2,6 +2,9 @@
 
 A color guessing game built with HTML CSS and JavaScript.
 
+### Live link
+[Color game](https://themainsamuel-hng-frontend-stage-1.netlify.app/)
+
 ### Improvements I can make
 
 1. Adding a high score feature and celebration effect (I'm thinking sound and confetti) when the score is passed
