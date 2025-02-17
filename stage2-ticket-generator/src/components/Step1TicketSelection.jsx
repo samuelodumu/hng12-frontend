@@ -37,9 +37,9 @@ function TicketSelection() {
           </div>
         </div>
         <hr className='divider mt-4' />
-        <div className='ticket-type p-2'>
+        <div className='ticket-type p-3'>
           <label className='roboto-regular'>Select ticket type</label>
-          <div className='ticket-inputs row gy-3 rounded-4 mt-2 justify-content-around'>
+          <div className='ticket-inputs row gy-3 rounded-5 mt-2 justify-content-between'>
             <div className='ticket-types free p-3 rounded-4 col-lg-4'>
               <h4 className='roboto-regular'>Free</h4>
               <p className='m-0'>REGULAR ACCESS</p>
