@@ -1,0 +1,9 @@
+Background color (darker): #02191D
+Background color (lighter): #0E464F
+Border color: #197686
+Form card bg color: #041E23
+Display font: Road Rage
+Header font: JejuMyeongjo
+Body font: Roboto
+
+<div>Icons made from <a href="https://www.onlinewebfonts.com/icon">svg icons</a>is licensed by CC BY 4.0</div>

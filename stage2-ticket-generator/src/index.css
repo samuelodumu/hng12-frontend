@@ -1,0 +1,230 @@
+:root {
+  font-family: 'Road Rage', serif, 'JejuMyeongjo', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  /* color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(
+      52.52% 32.71% at 50% 97.66%,
+      rgba(36, 160, 181, 0.2) 0%,
+      rgba(36, 160, 181, 0) 100%
+    ),
+    #02191d;
+  color: aliceblue;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Road Rage', serif;
+  line-height: 1.2;
+}
+
+.jeju {
+  font-family: 'JejuMyeongjo';
+}
+
+.rage {
+  font-family: 'Road Rage', serif;
+}
+
+.roboto-regular {
+  font-family: 'Roboto', serif;
+  font-weight: 400;
+}
+
+.roboto-medium {
+  font-family: 'Roboto', serif;
+  font-weight: 600;
+}
+
+/* nav */
+nav .container {
+  border: 1px solid #197686;
+}
+
+.card {
+  background-color: #041e23;
+  color: #fafafa;
+  border: #197686 1px solid;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  appearance: none;
+}
+
+.progress-bar::-webkit-progress-bar {
+  background: #0e464f;
+  border-radius: 5px;
+}
+
+.progress-bar::-webkit-progress-value {
+  background: #197686;
+  border-radius: 5px;
+}
+
+.bi-border-inner {
+  background: #08252b;
+  border: 1px solid #0e464f;
+  border-radius: 32px;
+  width: 90%;
+  padding: 24px;
+}
+
+.techember {
+  border: #197686 1px solid;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background: radial-gradient(
+        103.64% 57.39% at 14.02% 32.06%,
+        rgba(36, 160, 181, 0.2) 0%,
+        rgba(36, 160, 181, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    rgba(10, 12, 17, 0.1);
+}
+
+.divider {
+  width: 100%;
+  height: 4px;
+  background: #07373f;
+  border: none;
+}
+
+.ticket-inputs {
+  background: #052228;
+  border: 1px solid #07373f;
+  color: #ffffff;
+  font-family: 'Roboto';
+  padding: 0 1rem 1rem 1rem;
+}
+
+.ticket-types {
+  border: 2px solid #197686;
+  color: #ffffff;
+  font-family: 'Roboto';
+}
+
+.ticket-types:hover {
+  background-color: #12464e;
+}
+
+.ticket-types small {
+  font-size: smaller;
+}
+
+.select-ticket {
+  border: 1px solid #07373f;
+  background-color: transparent !important;
+  color: #ffffff;
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%23ffffff" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 6.345a.5.5 0 0 1 .708-.708l4.096 4.096 4.096-4.096a.5.5 0 1 1 .708.708l-4.796 4.796a.5.5 0 0 1-.708 0z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.select-ticket option {
+  background-color: #08252b;
+  border: none;
+  color: #ffffff;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button .symbols {
+  font-size: 15px;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #24a0b5;
+  border-color: #24a0b5;
+  transition: all 0.3s;
+}
+
+.btn-outline:hover {
+  background-color: #24a0b5;
+  color: #ffffff;
+}
+
+.btn-fill {
+  background-color: #24a0b5;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+.btn-fill:hover {
+  background-color: #12464e;
+}
+
+/* media queries */
+
+@media (min-width: 992px) {
+  .col-lg-4 {
+    flex: 0 0 auto;
+    width: 32%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav .container {
+    border-radius: 25px !important;
+  }
+  .container .navbar-nav {
+    width: 30% !important;
+  }
+  .techember-date-time {
+    flex-direction: column;
+  }
+  .two-vertical-lines {
+    display: none;
+  }
+}
