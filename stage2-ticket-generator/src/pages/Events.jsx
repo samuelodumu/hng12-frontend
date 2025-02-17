@@ -1,4 +1,5 @@
 import TicketSelection from '../components/Step1TicketSelection';
+import AttendeeDetails from '../components/Step2AttendeeDetails';
 import '../index.css';
 function Events() {
   return (
