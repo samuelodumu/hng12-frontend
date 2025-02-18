@@ -5,7 +5,7 @@ A conference ticket generator built with React
 
 ### Features
 - Users can fill out a form with their details and generate a ticket upon successful submission.
-- Responsive layout on all screens
-- Users can download their tickets as pdf
+- Users can download their tickets as a pdf file.
+- Responsive layout on all screens.
 
 ### Improvements
