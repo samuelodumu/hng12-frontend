@@ -1,0 +1,31 @@
+#root {
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+  border: 3px solid #ccc !important;
+  scrollbar-color: #ccc #f5f5f5;
+}
+
+.output-text {
+  background-color: #f5f5f5;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+.send-icon {
+  /* top: 3.8em;
+  left: 35.5em; */
+  bottom: 8%;
+  right: 3%;
+  background-color: #7b6455;
+  z-index: 10;
+  transition: transform 0.2s;
+}
+.send-icon:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
