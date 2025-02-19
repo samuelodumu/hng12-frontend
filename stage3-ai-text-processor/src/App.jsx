@@ -50,7 +50,7 @@ function App() {
               value={text}
               className='form-control rounded-5 p-3 position-relative input-text'
               aria-label='With textarea'></textarea>
-            <span className='send-icon fs-5 position-absolute align-self-end text-light px-3 py-2 rounded-4'>
+            <span onClick={sendChat} className='send-icon fs-5 position-absolute align-self-end text-light px-3 py-2 rounded-4'>
               <i className='bi bi-send'></i>
             </span>
           </div>
