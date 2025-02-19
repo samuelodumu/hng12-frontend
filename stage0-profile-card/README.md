@@ -1,9 +1,8 @@
 # HNG12 Stage 0
 
-A simple profile card built with HTML CSS and JavaScript.
+A simple profile card built with HTML, CSS and JavaScript.
 
-### Live link
-[Profile card](https://themainsamuel-hng-frontend-stage-0.netlify.app/)
+### [Live link](https://app.netlify.com/sites/themainsamuel-profile-card-hng12/)
 
 ### Improvements I can make
 
