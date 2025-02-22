@@ -57,7 +57,7 @@ function App() {
   };
 
   const sendChat = () => {
-    const output = document.querySelector('.output-text');
+    const output = document.getElementById('output-text');
     output.classList.add('text-end');
     output.value += `${text}\n`;
     output.scrollTop = output.scrollHeight;
